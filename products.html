@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Redesigned website for Blue Monkey Tea Pittsburgh by Jaclyn Yang -->
+
+    <!-- META tags for search engine and content identification -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Jaclyn Yang">
+    <meta name="keywords" content="Blue Monkey, Tea, Pittsburgh, Tea Shop, Shop">
+    <meta name="description" content="Blue Monkey Tea Pittsburgh Website">
+
+    <!-- External links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+    <!-- External link to the Oswald font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- External links to JS files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.lightbox.min.js"></script>
+
+    <!-- JS for implementing tabs -->
+    <script>
+        $(function() {
+            $("#tabs").tabs({
+                event: "click"
+            });
+        });      
+    </script>
+
+    <!-- JS for implementing lightbox galleries -->
+    <script>
+        $(function() {
+            $('#flavored_black a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#unflavored_black a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#oolong a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#green a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#chai a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#flavored_coffee a').lightBox();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $('#unflavored_coffee a').lightBox();
+        });
+    </script>
+
+    <title>Blue Monkey Tea</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header section at top of each page -->
+        <div id="top_row">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" width=150 height=150 alt="Blue Monkey Tea Logo"></a>
+            </div>
+            <header>
+                <h1>Blue Monkey Tea Pittsburgh</h1>
+                <h2>A Specialty Tea Shop</h2>
+            </header><br/>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html" class="selected">Products</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="stayconnected.html">Stay Connected</a>
+            </nav>
+        </div> <!--End of top_row-->
+
+        <div id="content">
+            <h1>Our Products</h1>
+            <!-- All photos used in the products section are from the original website: https://www.pittsburghcuppa.com/ -->
+            <p>Look below to see our fine selection of teas and coffee.</p>
+            
+            <!-- Tabbed organization of products -->
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Loose Black Teas</a></li>
+                    <li><a href="#tabs-2">Loose Oolong Teas</a></li>
+                    <li><a href="#tabs-3">Loose Green Teas</a></li>
+                    <li><a href="#tabs-4">Chai</a></li>
+                    <li><a href="#tabs-5">Coffee</a></li>
+                </ul>
+                
+                <!-- Tab for black teas -->
+                <div id="tabs-1">
+                    <div id="content-gallery1">
+                        <p>Click on the thumbnails to see full size images and descriptions.</p>
+                        <!-- Lighbox gallery for flavored black teas -->
+                        <div id="flavored_black">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Flavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail1">
+                                            <div id="thmbnlShadow1">
+                                                <a href="images/lemonginger.jpg" title="Lemon Ginger Black Tea: Lively and flavorful ginger notes peeking through the sweet lemon character. A delightful tea.">
+                                                <img src="images/lemongingerthumb.gif" alt="Lemon Ginger Black Tea" /></a>
+                                            </div>
+                                            <p>Lemon Ginger Black Tea</p>
+                                            <p>$4.50 / 2oz.<br/>$7.99 / 4oz.<br/>$13.99 / 8oz.<br/> $26.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail2">
+                                            <div id="thmbnlShadow2"> 
+                                                <a href="images/almond.jpg" title="Almond Black Tea: Infuses with a pleasant nutty character that goes well with a dash of milk. Cup strikes a subtle balance between the sweetness of almond and the tea’s natural astringency.">
+                                                <img src="images/almondthumb.gif" alt="Almond Black Tea" /></a>                            
+                                            </div>
+                                            <p>Almond Black Tea</p>
+                                            <p>$4.50 / 2oz.<br/>$7.99 / 4oz.<br/>$13.99 / 8oz.<br/> $26.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail3">
+                                            <div id="thmbnlShadow3"> 
+                                                <a href="images/pomrose.jpg" title="Pomegranate Rosehip Black Tea: Very refreshing. Pomegranate gives a lovely astringency and Vitamin C laden Rosehip rounds the edges.">
+                                                <img src="images/pomrosethumb.gif" alt="Pomegranate Rosehip Black Tea" /></a>                            
+                                            </div>
+                                            <p>Pomegranate Rosehip Black Tea</p>
+                                            <p>$4.50 / 2oz.<br/>$7.99 / 4oz.<br/>$13.99 / 8oz.<br/> $26.99 / 1lb.</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table><br/>
+                        </div> <!-- End of flavored black teas -->
+
+                        <!-- Lightbox gallery for unflavored black teas -->
+                        <div id="unflavored_black">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Unflavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail4">
+                                            <div id="thmbnlShadow4">
+                                                <a href="images/dragonpearls.jpg" title="Dragon Pearl Black Tea: Rare, hand-rolled variety of black tea with a smooth, rich and chocolaty taste. Naturally sweet and smooth, with a touch of earthiness.">
+                                                <img src="images/dragonpearlsthumb.gif" alt="Dragon Pearl Black Tea" /></a>
+                                            </div>
+                                            <p>Dragon Pearl Black Tea</p>
+                                            <p>$8.99 / 2oz.<br/>$16.99 / 4oz.<br/>$32.99 / 8oz.<br/> $68.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail5">
+                                            <div id="thmbnlShadow5"> 
+                                                <a href="images/puerh.jpg" title="Pu-Erh Black Tea: Three years old Chinese special tea. Toasted bread highlights with elemental and earthly notes.">
+                                                <img src="images/puerhthumb.gif" alt="Pu-Erh Black Tea" /></a>                            
+                                            </div>
+                                            <p>Pu-Erh Black Tea</p>
+                                            <p>$4.99 / 2oz.<br/>$8.99 / 4oz.<br/>$16.99 / 8oz.<br/> $32.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail6">
+                                            <div id="thmbnlShadow6"> 
+                                                <a href="images/goldenmonkey.jpg" title="Golden Monkey Black Tea: A flavory full bodied tea with an exotic origin character which tea tasters describe as ‘mouth-feel’.">
+                                                <img src="images/goldenmonkeythumb.jpg" alt="Golden Monkey Black Tea" /></a>                            
+                                            </div>
+                                            <p>Golden Monkey Black Tea</p>
+                                            <p>$9.99 / 2oz.<br/>$18.99 / 4oz.<br/>$36.99 / 8oz.<br/> $72.99 / 1lb.</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table>
+                        </div> <!-- End of unflavored black teas -->
+                    </div> <!-- End of content-gallery -->
+                </div> <!-- End of black tea tab-->
+
+                <!-- Tab for oolong teas -->
+                <div id="tabs-2">
+                    <div id="content-gallery2">
+                        <p>Click on the thumbnails to see full size images and descriptions.</p>
+                        <!-- Lightbox gallery for oolong teas -->
+                        <div id="oolong">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Unflavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail7">
+                                            <div id="thmbnlShadow7">
+                                                <a href="images/bluespring.jpg" title="Blue Spring Oolong Tea: An imperial favorite. Hand selected Ti Kuan Yin Oolong layers notes of orchid, baking bread and faint wine. Rare.">
+                                                <img src="images/bluespringthumb.gif" alt="Blue Spring Oolong Tea" /></a>
+                                            </div>
+                                            <p>Blue Spring Oolong Tea</p>
+                                            <p>$4.99 / 2oz.<br/>$8.99 / 4oz.<br/>$16.99 / 8oz.<br/>$32.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail8">
+                                            <div id="thmbnlShadow8"> 
+                                                <a href="images/orgslimming.jpg" title="Organic Oolong Slimming Tea: Floral-like orchid notes with a smooth and haunting finish.">
+                                                <img src="images/orgslimmingthumb.gif" alt="Organic Oolong Slimming Tea" /></a>                            
+                                            </div>
+                                            <p>Organic Oolong Slimming Tea</p>
+                                            <p>$6.99 / 2oz.<br/>$12.99 / 4oz.<br/>$24.99 / 8oz.<br/> $48.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail9">
+                                            <div id="thmbnlShadow9"> 
+                                                <a href="images/milkoolong.jpg" title="Quangzhou Milk Oolong Tea: A most unique character best described as 'premium oolong with sweet milk and light orchid notes peeking out from camellia depths'.">
+                                                <img src="images/milkoolongthumb.gif" alt="Quangzhou Milk Oolong Tea" /></a>                            
+                                            </div>
+                                            <p>Quangzhou Milk Oolong Tea</p>
+                                            <p>$10.99 / 2oz.<br/>$20.99 / 4oz.<br/>$40.99 / 8oz.<br/> $80.99 / 1lb.</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table>
+                        </div> <!-- End of oolong teas -->
+                    </div> <!-- End of content-gallery -->
+                </div> <!-- End of oolong tea tab -->
+
+                <!-- Tab for green teas -->
+                <div id="tabs-3">
+                    <div id="content-gallery3">
+                        <p>Click on the thumbnails to see full size images and descriptions.</p>
+                        <!-- Lightbox gallery of green teas -->
+                        <div id="green">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Unflavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail10">
+                                            <div id="thmbnlShadow10">
+                                                <a href="images/gyokuro.jpg" title="Gyokuro Japanese Green Tea: A full flavored green tea that has a satisfying light refreshing character. Tending pleasantly vegetative with some briskness.">
+                                                <img src="images/gyokurothumb.gif" alt="Gyokuro Japanese Green Tea" /></a>
+                                            </div>
+                                            <p>Gyokuro Japanese Green Tea</p>
+                                            <p>$12.50 / 2oz.<br/>$23.99 / 4oz.<br/>$46.99 / 8oz.<br/>$92.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail11">
+                                            <div id="thmbnlShadow11"> 
+                                                <a href="images/pearlriver.jpg" title="Organic Pearl River Green Tea: Full green tea flavor with delicate pungency and body. Satisfying cup tending bright forest green color.">
+                                                <img src="images/pearlriverthumb.gif" alt="Organic Pearl River Green Tea" /></a>                            
+                                            </div>
+                                            <p>Organic Pearl River Green Tea</p>
+                                            <p>$4.99 / 2oz.<br/>$8.99 / 4oz.<br/>$16.99 / 8oz.<br/> $32.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail12">
+                                            <div id="thmbnlShadow12"> 
+                                                <a href="images/beautyrings.jpg" title="Beauty Rings Green Tea: Hint of toastiness. Almost a pleasant jammy-like character. Delicate and delicious with fragrant Jasmine tones.">
+                                                <img src="images/beautyringsthumb.gif" alt="Beauty Rings Green Tea" /></a>                            
+                                            </div>
+                                            <p>Beauty Rings Green Tea</p>
+                                            <p>$24.99 / 2oz.<br/>$48.99 / 4oz.<br/>$96.99 / 8oz.<br/> $192.99 / 1lb.</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table>
+                        </div> <!-- End of green teas -->
+                    </div> <!-- End of content-gallery -->
+                </div> <!-- End of green tea tab -->
+
+                <!-- Tab for chai teas -->
+                <div id="tabs-4">
+                    <div id="content-gallery4">
+                        <p>Click on the thumbnails to see full size images and descriptions.</p>
+                        <!-- Lightbox gallery for chai teas -->
+                        <div id="chai">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Flavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail13">
+                                            <div id="thmbnlShadow13">
+                                                <a href="images/cochin.jpg" title="Cochin Masala Chai: Full bodied tea enhances South Indian masala spices. The finish has cardamom notes peeking out from lively ginger. Superb with milk and sugar.">
+                                                <img src="images/cochinthumb.gif" alt="Cochin Masala Chai" /></a>
+                                            </div>
+                                            <p>Cochin Masala Chai</p>
+                                            <p>$4.50 / 2oz.<br/>$7.99 / 4oz.<br/>$13.99 / 8oz.<br/>$26.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail14">
+                                            <div id="thmbnlShadow14"> 
+                                                <a href="images/herbalmix.jpg" title="Chai Mix Loose Herbal Tea: South Indian spice garden abound with a deliciously light, peppery finish. Only premium January grown spices make the grade for this mix.">
+                                                <img src="images/herbalmixthumb.jpg" alt="Chai Mix Loose Herbal Tea" /></a>                            
+                                            </div>
+                                            <p>Chai Mix Loose Herbal Tea</p>
+                                            <p>$5.99 / 2oz.<br/>$10.99 / 4oz.<br/>$20.99 / 8oz.<br/> $40.99 / 1lb.</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail15">
+                                            <div id="thmbnlShadow15"> 
+                                                <a href="images/mango.jpg" title="Mango Chai Tea: A warm blend of black tea, ginger root, cinnamon, and green cardamom with hints of mango.">
+                                                <img src="images/mangothumb.jpg" alt="Mango Chai Tea" /></a>                            
+                                            </div>
+                                            <p>Mango Chai Tea</p>
+                                            <p>$4.50 / 2oz.<br/>$7.99 / 4oz.<br/>$13.99 / 8oz.<br/> $26.99 / 1lb.</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table>
+                        </div> <!-- End of chai teas -->
+                    </div> <!-- End of content-gallery -->
+                </div> <!-- End of chai tea tab -->
+
+                <!-- Tab for coffee -->
+                <div id="tabs-5">
+                    <div id="content-gallery5">
+                        <p>Click on the thumbnails to see full size images and descriptions.</p>
+                        <!-- Lightbox gallery for flavored coffee -->
+                        <div id="flavored_coffee">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Flavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail16">
+                                            <div id="thmbnlShadow16">
+                                                <a href="images/butterrum.png" title="Butter Rum Coffee">
+                                                <img src="images/butterrumthumb.jpg" alt="Butter Rum Coffee" /></a>
+                                            </div>
+                                            <p>Butter Rum Coffee</p>
+                                            <p>$12.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail17">
+                                            <div id="thmbnlShadow17"> 
+                                                <a href="images/maple.png" title="Maple Walnut Coffee">
+                                                <img src="images/maplethumb.jpg" alt="Maple Walnut Coffee" /></a>                            
+                                            </div>
+                                            <p>Maple Walnut Coffee</p>
+                                            <p>$12.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail18">
+                                            <div id="thmbnlShadow18"> 
+                                                <a href="images/irish.png" title="Irish Creme Coffee">
+                                                <img src="images/irishthumb.jpg" alt="Irish Creme Coffee" /></a>                            
+                                            </div>
+                                            <p>Irish Creme Coffee</p>
+                                            <p>$13.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table><br/> 
+                        </div> <!-- End of flavored coffee -->
+
+                        <!-- Lightbox gallery for unflavored coffee -->
+                        <div id="unflavored_coffee">
+                            <!-- Displayed in a table -->
+                            <table>
+                                <tr>
+                                    <th colspan="3">Unflavored</th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <div id="galleryThumbnail19">
+                                            <div id="thmbnlShadow19">
+                                                <a href="images/colombian.jpg" title="Colombian Supremo Coffee: Very pleasant, medium bodied, smooth coffee. Very popular in our store. One of the bestsellers! Medium Roast, Robust.">
+                                                <img src="images/colombianthumb.gif" alt="Colombian Supremo Coffee" /></a>
+                                            </div>
+                                            <p>Colombian Supremo Coffee</p>
+                                            <p>$12.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail20">
+                                            <div id="thmbnlShadow20"> 
+                                                <a href="images/espresso.jpg" title="Espresso Roast Coffee: Dark roast, full deep body, heavy aroma. Coffee with a real 'KICK'! Can be used in Espresso or any other coffee maker. Dark Roast, Bold, Strong Flavor.">
+                                                <img src="images/espressothumb.gif" alt="Espresso Roast Coffee" /></a>                            
+                                            </div>
+                                            <p>Espresso Roast Coffee</p>
+                                            <p>$12.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div id="galleryThumbnail21">
+                                            <div id="thmbnlShadow21"> 
+                                                <a href="images/peruvian.jpg" title="Organic Fair Trade Peruvian Coffee: Very pleasant, medium bodied, smooth coffee. Very popular in our store. One of the bestsellers! Medium Roast.">
+                                                <img src="images/peruvianthumb.gif" alt="Organic Fair Trade Peruvian Coffee" /></a>                            
+                                            </div>
+                                            <p>Organic Fair Trade Peruvian Coffee</p>
+                                            <p>$15.99 / 1lb.<br/>Whole Bean<br/>Medium Ground<br/>Fine Ground</p>
+                                        </div> 
+                                    </th>
+                                </tr>
+                            </table>
+                        </div> <!-- End of unflavored coffee -->
+                    </div> <!-- End of content-gallery -->
+                </div> <!-- End coffee tab -->
+
+            </div> <!-- End of tabs -->
+        </div> <!-- End of content -->
+
+        <!-- Footer at end of every page -->
+        <footer>
+            &copy; Blue Monkey Tea Pittsburgh 2020 <br/>
+            5872 Forbes Ave. <br/>
+            Pittsburgh, PA 15217 <br/><br/>
+            <!-- Links to social media -->
+            <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank"><img src="images/facebook.png" width=50 height=50 alt="Facebook"></a>
+            <a href="https://www.instagram.com/bluemonkeytea/" target="_blank"><img src="images/instagram.png" width=50 height=50 alt="Instagram"></a> 
+            <a href="https://teapittsburgh.wordpress.com/" target="_blank"><img src="images/wordpress.png" width=50 height=50 alt="WordPress"></a> 
+        </footer> 
+    </div>
+</body>

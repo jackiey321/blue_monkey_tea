@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Redesigned website for Blue Monkey Tea Pittsburgh by Jaclyn Yang -->
+
+    <!-- META tags for search engine and content identification -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Jaclyn Yang">
+    <meta name="keywords" content="Blue Monkey, Tea, Pittsburgh, Tea Shop, Shop">
+    <meta name="description" content="Blue Monkey Tea Pittsburgh Website">
+
+    <!-- External links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <!-- External link to the Oswald font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- External links to JS files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>Blue Monkey Tea</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header section at top of each page -->
+        <div id="top_row">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" width=150 height=150 alt="Blue Monkey Tea Logo"></a>
+            </div>
+            <header>
+                <h1>Blue Monkey Tea Pittsburgh</h1>
+                <h2>A Specialty Tea Shop</h2>
+            </header><br/>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="stayconnected.html" class="selected">Stay Connected</a>
+            </nav>
+        </div> <!-- End of top_row -->
+
+        <div id="content">
+            <h1>Let's Stay Connected!</h1>
+            <p>Please fill out the form below to sign up for our mailing list.</p>
+            
+            <!-- Form for signing up for mailing list -->
+            <!-- Links to JS function for form validation -->
+            <form onsubmit="return validate()" action="mailto:100teacups@gmail.com" method="post" enctype="text/plain">
+                <!-- First part of form -->
+                <fieldset>
+                    <legend>Your Basic Information</legend>                    
+                    <label for="name">Name (Required):</label><br/>
+                    <input type="text" id="name" name="name" placeholder="Your Name" size="30" maxlength="30" required><br/><br/>
+                    
+                    <label for="email">Email Address (Required):</label><br/>
+                    <input type="email" id="email" name="email" placeholder="abc@defg.com" size="30" maxlength="30" required><br/><br/>
+
+                    <label for="zip">Zip Code (5 digits):</label><br/>
+                    <input type="text" id="zip" name="zip" placeholder="12345" size="5" maxlength="5"><br/><br/>
+
+                    <label for="phone">Phone Number (No dashes or spaces):</label><br/>
+                    <input type="text" id="phone" name="phone" value="" placeholder ="1234567890" size="11" maxlength="10"><br/><br/>
+                </fieldset>
+                <!-- Second part of form -->
+                <fieldset>
+                    <legend>Your Preferences</legend>
+                    <label for="subscribe">Would you like to subscribe to our weekly coupon flyer?</label><br/>
+                    <input type="checkbox" id="subscribe" name="subscribe">    
+                    <label for="subscribe">Yes, please subscribe me!</label><br/><br/>
+
+                    <label for="textmsg">Would you like to receive promotions by text?</label><br/>
+                    <input type="checkbox" id="textmsg" name="textmsg">    
+                    <label for="textmsg">Yes, please text me!</label><br/><br/>
+                </fieldset>         
+                <!-- Submit -->
+                <fieldset>
+                    <legend>Thank You!</legend>
+                    <input type="image" id="submit" name="submit" src="images/submit.png" alt="Submit">
+                </fieldset>  
+            </form><br/> <!-- End of form-->
+        </div> <!-- End of content -->
+
+        <!-- Footer at end of every page -->
+        <footer>
+            &copy; Blue Monkey Tea Pittsburgh 2020 <br/>
+            5872 Forbes Ave. <br/>
+            Pittsburgh, PA 15217 <br/><br/>
+            <!-- Links to social media -->
+            <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank"><img src="images/facebook.png" width=50 height=50 alt="Facebook"></a>
+            <a href="https://www.instagram.com/bluemonkeytea/" target="_blank"><img src="images/instagram.png" width=50 height=50 alt="Instagram"></a>  
+            <a href="https://teapittsburgh.wordpress.com/" target="_blank"><img src="images/wordpress.png" width=50 height=50 alt="WordPress"></a> 
+        </footer>
+    </div>
+</body>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Redesigned website for Blue Monkey Tea Pittsburgh by Jaclyn Yang -->
+
+    <!-- META tags for search engine and content identification -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Jaclyn Yang">
+    <meta name="keywords" content="Blue Monkey, Tea, Pittsburgh, Tea Shop, Shop">
+    <meta name="description" content="Blue Monkey Tea Pittsburgh Website">
+
+    <!-- External links to CSS files -->
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <!-- External link to the Oswald font -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <!-- External links to JS files -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <!-- JS for incorporating highcharts graph of customer traffic -->
+    <script>
+        $(function () {
+            $('#container-graph').highcharts( {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'In-Store Customer Traffic'
+                },
+                xAxis: {
+                    title: {
+                        text: 'Time of Day' 
+                    },
+                    categories: ['11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Average Number of Customers' 
+                    }
+                },
+                plotOptions: {
+                    line: {
+                        dataLabels: {
+                            enabled: true
+                        },
+                        enableMouseTracking: false
+                    }
+                },
+                series: [{
+                    name: 'Monday to Saturday',
+                    data: [5, 10, 8, 24, 5, 7, 32, 16]
+                }, {
+                    name: 'Sunday',
+                    data: [null, 50, 48, 25, 28, 27, null, null]
+                }]
+            });
+        });
+    </script>
+
+    <title>Blue Monkey Tea</title>
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header section at top of each page -->
+        <div id="top_row">
+            <div id="logo">
+                <a href="index.html"><img src="images/logo.png" width=150 height=150 alt="Blue Monkey Tea Logo"></a>
+            </div>
+            <header>
+                <h1>Blue Monkey Tea Pittsburgh</h1>
+                <h2>A Specialty Tea Shop</h2>
+            </header><br/>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html" class="selected">Contact Us</a>
+                <a href="stayconnected.html">Stay Connected</a>
+            </nav>
+        </div> <!-- End of top_row -->
+
+        <div id="content">
+            <h1>Contact Us</h1>
+            <br/>
+            <div id="info">
+                <!-- Contact information stored in a table -->
+                <table>
+                    <tr>
+                        <!-- Photo from Google Maps Street View -->
+                        <!-- https://www.google.com/maps/@40.4380292,-79.920261,3a,75y,159.04h,96.12t/data=!3m6!1e1!3m4!1smEs6DmGXUb1VTIRJpP_AtQ!2e0!7i16384!8i8192 -->
+                        <th colspan="2"><img src="images/store.png" alt="Store Photo"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Store Information</th>
+                    </tr>
+                    <tr>
+                        <th>Locations</th>
+                        <th>Pittsburgh (Squirrel Hill):<br/>5872 Forbes Avenue Pittsburgh, PA 15217<br/>Carnegie (South Hills):<br/>Now Closed</th>
+                    </tr> 
+                    <tr>   
+                        <th>Hours</th>
+                        <th>Monday	11AM to 7PM<br/>Tuesday  11AM to 7PM<br/>Wednesday 11AM to 7PM<br/>Thursday 11AM to 7PM<br/>Friday	11AM to 7PM<br/>Saturday 11AM to 7PM<br/>Sunday	12PM to 5PM</th>
+                    </tr> 
+                    <tr>    
+                        <th>Phone Number</th>
+                        <th>(412) 422-1606</th>
+                    </tr> 
+                    <tr>
+                        <th>Email</th>
+                        <th><a href = "mailto:100teacups@gmail.com" target="_blank">100teacups@gmail.com</a></th>
+                    </tr> 
+                    <tr> 
+                        <th>Previous Website</th>
+                        <th><a href = "https://www.pittsburghcuppa.com/" target="_blank">www.pittsburghcuppa.com</a></th>
+                    </tr> 
+                    <tr>
+                        <th colspan="2">See the map below for our our location!</th>
+                    </tr>
+                    <tr>
+                        <!-- Embedding for map -->
+                        <th colspan="2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d548.3913180735417!2d-79.92056316455619!3d40.43803745908294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f200108c553d%3A0xa62923c0d2116c57!2sTea%20Pittsburgh%20Blue%20Monkey%20Tea!5e0!3m2!1sen!2sus!4v1585688570937!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Use the graph below to choose the best time to visit!</th>
+                    </tr>
+                    <tr>
+                        <!-- Section for highchart -->
+                        <th colspan="2"><div id="container-graph"></div></th>
+                    </tr>
+                </table> <!-- End of contact information-->
+            </div><br/> <!-- End of info -->
+        </div> <!-- End of content -->
+
+        <!-- Footer at end of every page -->
+        <footer>
+            &copy; Blue Monkey Tea Pittsburgh 2020 <br/>
+            5872 Forbes Ave. <br/>
+            Pittsburgh, PA 15217 <br/><br/>
+            <!-- Links to social media -->
+            <a href="https://www.facebook.com/TeaPittsburgh/" target="_blank"><img src="images/facebook.png" width=50 height=50 alt="Facebook"></a>
+            <a href="https://www.instagram.com/bluemonkeytea/" target="_blank"><img src="images/instagram.png" width=50 height=50 alt="Instagram"></a>  
+            <a href="https://teapittsburgh.wordpress.com/" target="_blank"><img src="images/wordpress.png" width=50 height=50 alt="WordPress"></a> 
+        </footer>
+    </div>
+</body>
